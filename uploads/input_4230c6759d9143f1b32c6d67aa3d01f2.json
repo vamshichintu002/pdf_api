@@ -1,0 +1,699 @@
+{
+  "client_name": "Alex Chen",
+  "risk_profile": "Aggressive",
+  "total_investment": "₹4,00,00,000",
+  "asset_allocation": {
+    "equity": 80,
+    "debt": 20,
+    "alternative": 0
+  },
+  "asset_allocation_items": [
+    {
+      "name": "AIF Funds",
+      "details": [
+        "AIF Fund - ₹1,68,00,000"
+      ],
+      "asset_class": "Equity",
+      "amount": "₹1,68,00,000"
+    },
+    {
+      "name": "PMS Funds",
+      "details": [
+        "PMS Fund - ₹84,00,000"
+      ],
+      "asset_class": "Equity",
+      "amount": "₹84,00,000"
+    },
+    {
+      "name": "Large Cap Funds",
+      "details": [
+        "Large Cap Fund - ₹28,00,000"
+      ],
+      "asset_class": "Equity",
+      "amount": "₹28,00,000"
+    },
+    {
+      "name": "Mid Cap Funds",
+      "details": [
+        "Mid Cap Fund - ₹20,00,000"
+      ],
+      "asset_class": "Equity",
+      "amount": "₹20,00,000"
+    },
+    {
+      "name": "Small Cap Funds",
+      "details": [
+        "Small Cap Fund - ₹20,00,000"
+      ],
+      "asset_class": "Equity",
+      "amount": "₹20,00,000"
+    },
+    {
+      "name": "Government Bonds",
+      "details": [
+        "Government Bonds - ₹16,00,000"
+      ],
+      "asset_class": "Debt",
+      "amount": "₹16,00,000"
+    },
+    {
+      "name": "Corporate Bonds",
+      "details": [
+        "Corporate Bonds - ₹16,00,000"
+      ],
+      "asset_class": "Debt",
+      "amount": "₹16,00,000"
+    },
+    {
+      "name": "Fixed Deposits",
+      "details": [
+        "Fixed Deposits - ₹48,00,000"
+      ],
+      "asset_class": "Debt",
+      "amount": "₹48,00,000"
+    }
+  ],
+  "mutual_funds": [
+    {
+      "name": "Mid Cap Fund E",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 14,
+        "three_years": 14,
+        "five_years": 14
+      }
+    },
+    {
+      "name": "Small Cap Fund F",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 15,
+        "three_years": 15,
+        "five_years": 15
+      }
+    },
+    {
+      "name": "Sectoral Fund G",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 15,
+        "three_years": 15,
+        "five_years": 15
+      }
+    },
+    {
+      "name": "Seven Island",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 2000,
+        "three_years": 2000,
+        "five_years": 2000
+      }
+    },
+    {
+      "name": "Northern Arc Income Builder Fund Series II",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 1000,
+        "three_years": 1000,
+        "five_years": 1000
+      }
+    },
+    {
+      "name": "Abakkus - Emerging Opportunities",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Phoenix PMS",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Special Situations AIF",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 1670,
+        "three_years": 1670,
+        "five_years": 1670
+      }
+    },
+    {
+      "name": "Long-Short Equity AIF",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 1420,
+        "three_years": 1420,
+        "five_years": 1420
+      }
+    },
+    {
+      "name": "GOODLUCK DEFENCE AND AEROSPACE PRIVATE LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "WAAREE ENERGIES",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "API HOLDINGS",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Bira",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "STERLITE POWER TRANSMISSION",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "TATA CAPITAL",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "HDB Financial",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Chennai Super Kings",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Apollo Green",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Swiggy CCPS",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "HDFC SECURITIES LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "OYO",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Care Health Insurance Ltd",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "KANNUR INTERNATIONAL AIRPORT LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "AITMC VENTURES LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "RRP S4E INNOVATION PRIVATE LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "MOHFL",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "NAYARA ENERGY",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "MATRIX GAS AND RENEWABLES LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Cochin International Airport Limited",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "SBI MUTUAL FUND",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Indian Potash",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "TRL KROSAKI REFRACTORIES LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "POLYMATECH ELECTRONICS LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Tata Technologies",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Hero Fincorp",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Studds",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "ORBIS",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "NCDEX",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "HEXAWARE TECHNOLOGIES LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "DELTA GALAXY ENGINEERING SERVICES PRIVATE LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "saint laurent",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "INDOFIL",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Vikram Solar",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Metropolitan Stock Exchange of India (MSEI)  Limited",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Mohan Meakin",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "RRP S4E INNOVATION PRIVATE LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "APOLLO FASHION INTERNATIONAL LIMITED",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "PAYMATE",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Mumbai Indians",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Medplus",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Medibuddy",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "MediAssist",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Team India",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Apurv test",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "CT2025",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Apurv New",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Dehradun Tourism",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": " alfa romeo",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "NSE",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Large Cap Stock",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 10,
+        "three_years": 10,
+        "five_years": 10
+      }
+    },
+    {
+      "name": "Mid Cap Stock",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 12,
+        "three_years": 12,
+        "five_years": 12
+      }
+    },
+    {
+      "name": "Small Cap Stock",
+      "category": "Balanced",
+      "returns": {
+        "one_year": 15,
+        "three_years": 15,
+        "five_years": 15
+      }
+    }
+  ],
+  "debt_papers": [
+    {
+      "fund_name": "HDFC Mid-Cap Opportunities Fund Growth",
+      "maturity": "28 Jan 2027(M)",
+      "payment_frequency": "Monthly",
+      "ytm": "35.75%",
+      "quantum": "10 Lac",
+      "type": "Senior Secured",
+      "face_value": "1,00,000",
+      "rating": "A by ICRA"
+    },
+    {
+      "fund_name": "Nippon India Growth Fund - Growth",
+      "maturity": "28 Jan 2027(M)",
+      "payment_frequency": "Monthly",
+      "ytm": "35%",
+      "quantum": "10 Lac",
+      "type": "Senior Secured",
+      "face_value": "1,00,000",
+      "rating": "A by ICRA"
+    },
+    {
+      "fund_name": "HSBC Value Growth",
+      "maturity": "28 Jan 2027(M)",
+      "payment_frequency": "Monthly",
+      "ytm": "32.48%",
+      "quantum": "10 Lac",
+      "type": "Senior Secured",
+      "face_value": "1,00,000",
+      "rating": "A by ICRA"
+    },
+    {
+      "fund_name": "Parag Parikh Flexi Cap Regular Growth",
+      "maturity": "28 Jan 2027(M)",
+      "payment_frequency": "Monthly",
+      "ytm": "32.77%",
+      "quantum": "10 Lac",
+      "type": "Senior Secured",
+      "face_value": "1,00,000",
+      "rating": "A by ICRA"
+    },
+    {
+      "fund_name": "Quant Small Cap Fund Growth",
+      "maturity": "28 Jan 2027(M)",
+      "payment_frequency": "Monthly",
+      "ytm": "51.27%",
+      "quantum": "10 Lac",
+      "type": "Senior Secured",
+      "face_value": "1,00,000",
+      "rating": "A by ICRA"
+    },
+    {
+      "fund_name": "AA Corporate Bonds V",
+      "maturity": "28 Jan 2027(M)",
+      "payment_frequency": "Monthly",
+      "ytm": "8.5-9.5%",
+      "quantum": "10 Lac",
+      "type": "Senior Secured",
+      "face_value": "1,00,000",
+      "rating": "A by ICRA"
+    }
+  ],
+  "recommendation_summary": "Based on your Aggressive risk profile, we have recommended a diversified portfolio of investment products.\n\nFor equity allocation:\n- Equity mutual funds focused on mid-cap, small-cap, and sectoral stocks.\n- Portfolio Management Services (PMS) with a concentrated growth approach.\n- Alternative Investment Funds (AIF) with long-short strategies.\n- Unlisted Stocks with high growth potential and pre-IPO opportunities for higher returns.\n\nFor debt allocation:\n- Debt mutual funds with credit risk and dynamic bond strategies.\n- Direct debt investments in AA-rated corporate bonds.\n\nFor gold/silver allocation:\n- Gold and Silver ETFs for efficient exposure to precious metals.\n- Physical gold and silver for long-term wealth preservation."
+}

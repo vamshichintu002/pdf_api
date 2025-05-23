@@ -1,0 +1,168 @@
+{
+  "clientname": "Jane Smith",
+  "report_title": "Investment Proposal for Jane Smith",
+  "logo_url": "",
+  "investment_products": {
+    "target": "₹1,00,000",
+    "mutual_fund": {
+      "points": [
+        "Focus on creating a Mutual fund portfolio with objective of long term wealth creation.",
+        "Selection of fund which are majorly equity oriented and capable of generating Alpha in comparison with the benchmark returns.",
+        "Investment in funds with a time horizon of 5 - 7years.",
+        "Selection of portfolio which are managed by Fund Managers with proven track record."
+      ],
+      "top_funds": [
+        {
+          "name": "Multi Cap Fund C",
+          "category": "Balanced",
+          "returns": {
+            "one_year": 12,
+            "three_years": 12,
+            "five_years": 12
+          }
+        },
+        {
+          "name": "Focused Equity Fund D",
+          "category": "Balanced",
+          "returns": {
+            "one_year": 13,
+            "three_years": 13,
+            "five_years": 13
+          }
+        }
+      ]
+    }
+  },
+  "asset_allocation": {
+    "description": "Asset Allocation is a mix of different asset class eg equity, Debt, Gold etc in an investment portfolio. The aim of asset allocation is to balance risk and return in accordance with different financial goals and risk appetite of the client.",
+    "benefits": [
+      "Reduce Investment Risk",
+      "Optimises Returns",
+      "Liquidity Management",
+      "Achievement of Financial Goal",
+      "Aids in Tax Planning"
+    ],
+    "distribution": {
+      "equity": 60,
+      "debt": 40
+    },
+    "items": [
+      {
+        "name": "Large Cap Funds",
+        "details": [
+          "Large Cap Fund - ₹24,000"
+        ],
+        "asset_class": "Equity",
+        "amount": "₹24,000"
+      },
+      {
+        "name": "Mid Cap Funds",
+        "details": [
+          "Mid Cap Fund - ₹18,000"
+        ],
+        "asset_class": "Equity",
+        "amount": "₹18,000"
+      },
+      {
+        "name": "Small Cap Funds",
+        "details": [
+          "Small Cap Fund - ₹18,000"
+        ],
+        "asset_class": "Equity",
+        "amount": "₹18,000"
+      },
+      {
+        "name": "Government Bonds",
+        "details": [
+          "Government Bonds - ₹10,000"
+        ],
+        "asset_class": "Debt",
+        "amount": "₹10,000"
+      },
+      {
+        "name": "Corporate Bonds",
+        "details": [
+          "Corporate Bonds - ₹10,000"
+        ],
+        "asset_class": "Debt",
+        "amount": "₹10,000"
+      },
+      {
+        "name": "Fixed Deposits",
+        "details": [
+          "Fixed Deposits - ₹20,000"
+        ],
+        "asset_class": "Debt",
+        "amount": "₹20,000"
+      }
+    ],
+    "total": "₹1,00,000"
+  },
+  "fixed_income_offering": {
+    "target": "₹40,000",
+    "description": "The investment strategy is to invest across high quality Fixed Income Instruments along with structured diversified portfolio with an aim to generate periodic cash flows and capital growth.",
+    "bullets": [
+      "Focus on high credit quality instruments with majority allocation to issuers with high degree of corporate governance",
+      "Investment strategy is to achieve diversification, targeting periodic cash flows, balancing risk and higher portfolio performance",
+      "High quality income portfolio with dynamic investment duration to take care of market volatility"
+    ],
+    "debt_papers": [
+      {
+        "fund_name": "ICICI Prudential Equity Savings Fund Growth",
+        "maturity": "28 Jan 2027(M)",
+        "payment_frequency": "Monthly",
+        "ytm": "11.96%",
+        "quantum": "10 Lac",
+        "type": "Senior Secured",
+        "face_value": "1,00,000",
+        "rating": "A by ICRA"
+      },
+      {
+        "fund_name": "HDFC Balanced Advantage Fund Growth",
+        "maturity": "28 Jan 2027(M)",
+        "payment_frequency": "Monthly",
+        "ytm": "28.17%",
+        "quantum": "10 Lac",
+        "type": "Senior Secured",
+        "face_value": "1,00,000",
+        "rating": "A by ICRA"
+      },
+      {
+        "fund_name": "AAA Corporate Bonds U",
+        "maturity": "28 Jan 2027(M)",
+        "payment_frequency": "Monthly",
+        "ytm": "7.5-8.5%",
+        "quantum": "10 Lac",
+        "type": "Senior Secured",
+        "face_value": "1,00,000",
+        "rating": "A by ICRA"
+      }
+    ]
+  },
+  "private_equity": {
+    "target": "₹15,000",
+    "description": "The investment strategy is to invest in high-potential unlisted companies with strong growth prospects.",
+    "bullets": [
+      "The popularity of unlisted shares has grown as a result of the competition between new-age companies to reach the necessary threshold for being listed on the stock market.",
+      "In contrast to investing later, investing in a start-up at an early stage will benefit the investor more because it will result in greater profits and ownership holdings."
+    ],
+    "scrips": [
+      {
+        "name": "Large Cap Stock",
+        "industry": "Financials",
+        "investment_size": "₹5,000"
+      },
+      {
+        "name": "Mid Cap Stock",
+        "industry": "Financials",
+        "investment_size": "₹5,000"
+      },
+      {
+        "name": "Small Cap Stock",
+        "industry": "Financials",
+        "investment_size": "₹5,000"
+      }
+    ]
+  },
+  "blur_funds": false
+}
