@@ -1,15 +1,16 @@
-# Invest4Edu PDF Report Generator
+# Investment Proposal PDF Generator API
 
-This project generates professional PDF reports for Invest4Edu based on JSON data input. The system produces dynamic PDF reports that match the Invest4Edu design.
+This project provides a REST API for generating professional PDF investment reports based on JSON data. The system produces dynamic PDF reports using customizable HTML templates.
 
 ## Features
 
+- REST API with FastAPI for PDF generation
 - Dynamic PDF generation from JSON data
-- Customizable HTML templates with Jinja2
+- Multiple template support (invest4edu, investvalue)
+- Fund name blurring option for confidentiality
 - Professional styling with CSS
-- Command-line interface for easy usage
-- Support for multiple report types
-- Fallback to browser-based PDF generation if WeasyPrint is not available
+- Playwright-based PDF generation for consistent results
+- CORS support for cross-origin requests
 
 ## Installation
 
@@ -19,40 +20,64 @@ This project generates professional PDF reports for Invest4Edu based on JSON dat
 pip install -r requirements.txt
 ```
 
-2. For WeasyPrint functionality (optional):
-   - Install WeasyPrint: `pip install weasyprint==60.1`
-   - Install system dependencies for WeasyPrint (see [WeasyPrint's documentation](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation))
+2. For PDF generation functionality (required):
+   - Install Playwright: `pip install playwright`
+   - Install the browsers: `playwright install`
 
 ## Usage
 
-### Recommended Method
+### Starting the API Server
 
-Use the simplified report generator for the most reliable results:
-
-```bash
-python simple_report_generator.py --data sample_data.json
-```
-
-This will generate an HTML report and open it in your browser, where you can print it to PDF.
-
-### Complete PDF Generator
-
-For a more comprehensive solution that attempts to use WeasyPrint if available:
+Run the FastAPI server:
 
 ```bash
-python complete_pdf_generator.py --data sample_data.json --output my_report
+uvicorn app:app --reload
 ```
 
-This will try to generate both HTML and PDF files. If WeasyPrint is not available or encounters issues, it will fall back to browser-based PDF generation.
+The API will be available at `http://localhost:8000`
 
-### Command Line Options
+### API Endpoints
 
-All generator scripts support these options:
+#### 1. Generate PDF from JSON File Upload
 
-- `--data`, `-d`: Path to the JSON data file (default: sample_data.json)
-- `--template`, `-t`: Name of the HTML template file (default: simple_report.html)
-- `--output`, `-o`: Base name for output files (default: output_report)
-- `--no-open`: Do not open the generated HTML in browser
+**Endpoint:** `POST /generate-pdf/`
+
+**Parameters:**
+- `data_file`: JSON file containing the data for the report (form data)
+- `template`: Template to use (`invest4edu` or `investvalue`, defaults to `invest4edu`)
+- `blur_funds`: Whether to blur fund names in the generated PDF (defaults to `false`)
+
+**Example (using curl):**
+```bash
+curl -X POST \
+  -F "data_file=@sample_data.json" \
+  -F "template=investvalue" \
+  -F "blur_funds=true" \
+  http://localhost:8000/generate-pdf/
+```
+
+#### 2. Generate PDF from JSON Body
+
+**Endpoint:** `POST /generate-pdf-json/`
+
+**Parameters:**
+- Request body: JSON data containing template data
+- `template`: Template to use (`invest4edu` or `investvalue`, defaults to `invest4edu`)
+- `blur_funds`: Whether to blur fund names in the generated PDF (defaults to `false`)
+
+**Example (using curl):**
+```bash
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"clientname":"John Doe", "template":"investvalue", "blur_funds": true, ...}' \
+  http://localhost:8000/generate-pdf-json/
+```
+
+### Interactive Documentation
+
+FastAPI provides automatic interactive API documentation at:
+- Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
 
 ## JSON Data Structure
 
@@ -60,7 +85,11 @@ The JSON data should follow this structure:
 
 ```json
 {
+  "clientname": "Client Name",
   "report_title": "Investment Report",
+  "logo_url": "",
+  "template": "invest4edu",  // Optional: "invest4edu" or "investvalue"
+  "blur_funds": false,       // Optional: Whether to blur fund names
   "investment_products": {
     "target": "1.00Cr",
     "mutual_fund": {
@@ -94,36 +123,77 @@ The JSON data should follow this structure:
       }
     ],
     "total": "Total amount"
+  },
+  "fixed_income_offering": {
+    "target": "1.00Cr",
+    "description": "Description text",
+    "bullets": ["Point 1", "Point 2", ...],
+    "debt_papers": [
+      {
+        "fund_name": "Fund Name",
+        "maturity": "Maturity Date",
+        "payment_frequency": "Payment Frequency",
+        "ytm": "Yield to Maturity",
+        "quantum": "Quantum",
+        "type": "Type",
+        "face_value": "Face Value",
+        "rating": "Rating"
+      }
+    ]
+  },
+  "pms": {
+    "target": "1.00Cr",
+    "description": "Description text",
+    "bullets": ["Point 1", "Point 2", ...],
+    "funds": ["Fund details"]
+  },
+  "private_equity": {
+    "target": "1.00Cr",
+    "description": "Description text",
+    "bullets": ["Point 1", "Point 2", ...],
+    "scrips": ["Scrip details"]
   }
 }
 ```
 
 See `sample_data.json` for a complete example.
 
-## Creating Custom Reports
+## Templates and Custom Reports
+
+The system currently supports two report templates:
+
+1. **invest4edu** - The default template for Invest4Edu reports
+2. **investvalue** - An alternative template for InvestValue reports
 
 To create custom reports:
 
 1. Create a new HTML template in the `templates` directory
-2. Prepare your JSON data file with the appropriate structure
-3. Run the generator with your custom template and data
+2. Update the template mapping in `app.py`
+3. Prepare your JSON data file with the appropriate structure
+4. Call the API with your custom template parameter
+
+## Fund Name Blurring
+
+The API supports blurring fund names in the generated PDFs for confidentiality purposes. To enable this feature:
+
+- When uploading a JSON file: Set the `blur_funds` parameter to `true`
+- When sending JSON in the request body: Include `"blur_funds": true` in your JSON data
 
 ## Project Files
 
-- `simple_report_generator.py`: Simplified HTML report generator (recommended)
-- `complete_pdf_generator.py`: Comprehensive solution with WeasyPrint support
-- `generate_pdf.py`: Alternative PDF generator
-- `templates/simple_report.html`: Simplified HTML template
-- `templates/invest4edu_report.html`: Original HTML template with inline CSS
-- `sample_data.json`: Example data structure
+- `app.py`: Main FastAPI application with API endpoints
+- `browser_pdf_generator.py`: PDF generation functionality using Playwright
+- `templates/invest4edu_report.html`: Template for Invest4Edu reports
+- `templates/investvalue_report.html`: Template for InvestValue reports
+- `sample_data.json`: Example data structure with template and blur_funds parameters
+- `requirements.txt`: Project dependencies
 
-## Browser-based PDF Generation
+## Directory Structure
 
-If WeasyPrint is not available or encounters issues, follow these steps to generate a PDF:
+- `uploads/`: Temporary storage for uploaded JSON files
+- `outputs/`: Generated HTML and PDF files
+- `templates/`: HTML templates for report generation
 
-1. The HTML report will open in your default browser
-2. Press Ctrl+P to open the print dialog
-3. Select 'Save as PDF' as the destination
-4. Click 'Save' to generate the PDF
+## PDF Generation
 
-This method works reliably across all platforms and produces high-quality PDFs.
+The API uses Playwright for PDF generation, which provides consistent and high-quality results. Playwright renders the HTML using a headless browser and then generates a PDF, ensuring that complex CSS layouts and styling are correctly applied.

@@ -2,7 +2,9 @@
   "clientname": "Vamshi Sudula",
   "report_title": "Invest4Edu Investment Report",
   "logo_url": "",
-  "investment_products": {
+  "template": "invest4edu",
+  "blur_funds": false,
+  "investment_products": {  
     "target": "1.00Cr",
     "mutual_fund": {
       "points": [
